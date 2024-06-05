@@ -1,11 +1,8 @@
 name: Build & Deploy
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'src/App.js'
+  release:
+    types: [published]
       
 env:
   CI: false
